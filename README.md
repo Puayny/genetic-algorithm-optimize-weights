@@ -1,9 +1,9 @@
 In this project, I use a genetic algorithm to evolve a tic-tac-toe playing neural network.
 
-The network size is fixed.
-Input layer 18 units: 2 units to represent each game cell, as each game cell has 3 possible states - blank, player occupied, opponent occupied.
-Hidden layer 128 units with relu activation: Should be enough to play a perfect tic-tac-toe.
-Output layer 9 units: 1 unit for each game cell.
+The network size is fixed.<br>
+Input layer 18 units: 2 units to represent each game cell, as each game cell has 3 possible states - blank, player occupied, opponent occupied.<br>
+Hidden layer 128 units with relu activation: Should be enough to play a perfect tic-tac-toe.<br>
+Output layer 9 units: 1 unit for each game cell.<br>
 
 The weights and bias units are updated through a genetic algorithm.
 Each round of evolution pits 40 neural networks against each other in a round-robin format to determine fitness, where a loss is +1 fitness, a draw is 0, and a loss is -1.
@@ -22,6 +22,7 @@ Also, I'm not sure if evolving the networks actually helped to tune the paramete
 A basline comparison would be that in each evolution, we select 
 - the top few networks with the highest fitness
 - randomly generate all other neural networks
+
 I have not compared this with the current implementation, but doing so would give us a better idea of whether evolution really helped here.
 
 Next up: using genetic algorithms to determine network architecture instead?
